@@ -1,0 +1,42 @@
+{
+  "create scrum": {
+    "username": "madhu",
+    "taskName": "create scrum",
+    "startDate": "28/10/2022",
+    "endDate": "28/10/2022",
+    "startTime": "14:27:30",
+    "endTime": "14:27:32",
+    "timeTaken": "0:0:2",
+    "expectedTime": "5 mins"
+  },
+  "login page": {
+    "username": "deepi",
+    "taskName": "login page",
+    "startDate": "08/11/2022",
+    "endDate": "08/11/2022",
+    "startTime": "9:23:38",
+    "endTime": "9:23:43",
+    "timeTaken": "0:0:4",
+    "expectedTime": "1 hr"
+  },
+  "sign up page": {
+    "username": "deepi",
+    "taskName": "sign up page",
+    "startDate": "08/11/2022",
+    "endDate": "08/11/2022",
+    "startTime": "9:24:7",
+    "endTime": "9:24:22",
+    "timeTaken": "0:0:10",
+    "expectedTime": "1 hour"
+  },
+  "create flowchart": {
+    "username": "deepi",
+    "taskName": "create flowchart",
+    "startDate": "08/11/2022",
+    "endDate": "08/11/2022",
+    "startTime": "9:23:17",
+    "endTime": "9:23:22",
+    "timeTaken": "0:0:4",
+    "expectedTime": "30 mins"
+  }
+}

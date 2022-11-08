@@ -1,0 +1,369 @@
+body {
+  background-color: rgb(168, 247, 246);
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.close-button {
+  background-color: lightgray;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  float: right;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 1.5rem;
+}
+.close-button:hover {
+  background-color: rgb(231, 138, 138);
+}
+.display-container {
+  overflow-y: auto;
+}
+.display-profile {
+  background-color: rgb(169 141 222);
+  color: white;
+  display: none;
+  height: 50%;
+  margin: 20px auto;
+  width: 35%;
+}
+.display-task {
+  width: 88%;
+}
+.display-timer {
+  background-color: rgb(8, 9, 9);
+  color: white;
+  font-size: 25px;
+  height: 30px;
+  width: 40px;
+}
+.edit-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 15px;
+}
+.edit-close {
+  display: flex;
+  justify-content: flex-end;
+}
+.edit-icon {
+  height: 20px;
+  width: 20px;
+}
+.edit-submit {
+  background-color: rgb(40, 140, 179);
+  border-color: white;
+  border-radius: 10px;
+  color: white;
+  font-size: 19px;
+  height: 35px;
+  text-align: center;
+  width: 95px;
+}
+.edit-task {
+  background-color: rgb(132, 192, 203);
+  bottom: 0px;
+  color: white;
+  display: none;
+  flex-direction: column;
+  font-size: 20px;
+  height: 38%;
+  left: 0px;
+  margin: 95px auto;
+  padding: 20px;
+  position: fixed;
+  right: 0px;
+  row-gap: 5%;
+  top: 30px;
+  width: 25%;
+  z-index: 1000000;
+}
+.edit-task-box {
+  border-radius: 10px;
+  height: 30px;
+  text-align: center;
+  width: 70%;
+}
+.flex-container {
+  align-items: center;
+  column-gap: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div,
+.flex-container > input {
+  align-items: center;
+  background-color: #ede9e9;
+  border-color: #f1f1f1;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  font-size: 15px;
+  margin: 3px;
+  text-align: center;
+  width: 120px;
+}
+#history,
+#logout,
+#profile {
+  background-color: rgb(85 142 197);
+  border-color: rgb(85 142 197);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 130px;
+}
+.login-page-container,
+.signup-page-container {
+  background-color: rgb(215, 172, 250);
+  flex-direction: column;
+  height: 50%;
+  margin: 10% auto;
+  width: 40%;
+}
+.login-page-container {
+  display: flex;
+}
+
+.login-heading,
+.signup-heading,
+.title {
+  align-items: center;
+  background-color: rgb(179, 20, 190);
+  color: white;
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  height: 15%;
+  justify-content: center;
+}
+
+.login-input-box,
+.signup-input-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: center;
+  margin: 10px auto;
+  row-gap: 10%;
+  width: 100%;
+}
+.login-name-input-box,
+.input-box {
+  border-radius: 5px;
+  height: 90%;
+  width: 50%;
+}
+
+.login-btn,
+.sign-up-btn {
+  background-color: blueviolet;
+  border-color: blueviolet;
+  border-radius: 8px;
+  box-shadow: white;
+  color: white;
+  font-size: 16px;
+  height: 12%;
+  width: 15%;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 85%;
+}
+.main-page {
+  background-image: url("./assets/background.jfif");
+  background-size: cover;
+  display: none;
+  flex-direction: column;
+  height: 80%;
+  margin: 4% auto;
+  width: 95%;
+}
+.menu-button {
+  align-items: center;
+  background-color: #f3e5e55c;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+  row-gap: 5%;
+  width: 12%;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  visibility: hidden;
+  width: 100%;
+}
+.modal-content {
+  background-color: rgb(147 157 230);
+  left: 50%;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24rem;
+}
+#new-task {
+  background-color: rgb(85 142 197);
+  border-color: rgb(85 142 197);
+  border-radius: 10px;
+  box-shadow: 3px 3px white;
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 130px;
+}
+.profile-heading {
+  align-items: center;
+  background-color: rgb(112 84 223);
+  color: white;
+  column-gap: 2%;
+  display: flex;
+  font-size: 30px;
+  height: 35%;
+  justify-content: center;
+}
+
+.profile-img {
+  height: 45px;
+  width: 45px;
+}
+.profile-username {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  height: 65%;
+  justify-content: center;
+  padding-left: 15%;
+  row-gap: 10%;
+}
+.show-modal {
+  opacity: 1;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  visibility: visible;
+}
+#sign-up,
+#sign-in {
+  border-radius: 3px;
+  border-color: white;
+  font-size: 15px;
+  height: 30px;
+  width: 80px;
+}
+.sign-up-username,
+.username {
+  color: white;
+  font-size: 25px;
+}
+.signup-page-container {
+  display: none;
+}
+.start-timer-btn {
+  background-color: rgb(28, 72, 160);
+  border-color: white;
+  border-radius: 15px;
+  color: white;
+  font-size: 15px;
+  height: 35px;
+  width: 25%;
+}
+.task-page {
+  background-color: lightblue;
+  height: 50%;
+  width: 30%;
+}
+.task-title {
+  align-items: center;
+  column-gap: 3px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.task-title > div {
+  align-items: center;
+  background-color: #f1f1f1;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  height: 40px;
+  justify-content: center;
+  margin: 3px;
+  width: 120px;
+}
+
+.title {
+  background-color: rgb(56, 160, 230);
+}
+@media all and (max-width: 1300px) {
+  .flex-container > div,
+  .flex-container > input {
+    height: 30px;
+    font-size: 13px;
+    width: 90px;
+  }
+  #history,
+  #profile,
+  #logout,
+  #new-task {
+    font-size: 15px;
+    height: 35px;
+    width: 95px;
+  }
+  .profile-heading {
+    font-size: 25px;
+  }
+  .profile-username {
+    font-size: 22px;
+  }
+  .task-title > div {
+    font-size: 12px;
+    height: 30px;
+    width: 90px;
+  }
+}
+@media all and (max-width: 890px) {
+  .flex-container > div,
+  .flex-container > input {
+    height: 25px;
+    font-size: 11px;
+    width: 75px;
+  }
+  #history,
+  #profile,
+  #logout,
+  #new-task {
+    font-size: 11px;
+    height: 30px;
+    width: 85px;
+  }
+
+  .profile-heading {
+    font-size: 22px;
+  }
+  .profile-username {
+    font-size: 17px;
+  }
+  .task-title > div {
+    font-size: 10px;
+    height: 25px;
+    width: 75px;
+  }
+}

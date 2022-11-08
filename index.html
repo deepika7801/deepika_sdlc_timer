@@ -1,0 +1,167 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <section id="login-page-container" class="login-page-container">
+      <div class="login-heading">LOGIN HERE...</div>
+      <div class="login-input-box">
+        <div class="username">
+          User Name&#160;
+          <input
+            class="login-name-input-box"
+            type="text"
+            id="login-username"
+            name="username"
+            placeholder="User Name"
+            required="Enter username"
+          />
+        </div>
+        <div class="username">
+          Password&nbsp;
+          <input
+            class="login-name-input-box"
+            type="password"
+            id="login-password"
+            name="username"
+            placeholder="Password"
+            required="Enter password"
+          />
+        </div>
+        <button id="login-btn" class="login-btn">Login</button>
+        <span style="font-size: 18px"
+          >Not have an account? <button id="sign-up">sign Up</button></span
+        >
+      </div>
+    </section>
+    <section id="signup-page-container" class="signup-page-container">
+      <div class="signup-heading">Sign Up</div>
+      <div class="signup-input-box">
+        <div title="Enter the username">
+          <div class="sign-up-username">
+            User Name&#160;
+            <input
+              class="input-box"
+              type="text"
+              id="username"
+              name="username"
+              placeholder="User Name"
+            />
+          </div>
+        </div>
+        <div title="Enter the Email-Id">
+          <div class="sign-up-username">
+            Email-Id&#160;
+            <input
+              class="input-box"
+              type="email"
+              id="email-id"
+              name="email"
+              placeholder="ex:abc@gmail.com"
+            />
+          </div>
+        </div>
+        <div title="Password must be atleast 4 characters">
+          <div class="sign-up-username">
+            Password&nbsp;
+            <input
+              class="input-box"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+        </div>
+        <button id="signup-btn" type="submit" class="sign-up-btn">
+          Submit
+        </button>
+        <span style="font-size: 18px"
+          >Already have an account? <button id="sign-in">Sign In</button></span
+        >
+      </div>
+    </section>
+    <div id="main-page" class="main-page">
+      <div class="title">Time Tracker</div>
+      <div class="main-container">
+        <div class="menu-button">
+          <div><button id="new-task">+ New task</button></div>
+          <div><button id="profile">Profile</button></div>
+          <div><button id="history">History</button></div>
+          <div><button id="logout">Log Out</button></div>
+        </div>
+        <div class="display-task" id="display-task">
+          <div class="task-title">
+            <div>TASK NAME</div>
+            <div>START DATE</div>
+            <div>START TIME</div>
+            <div>END DATE</div>
+            <div>END TIME</div>
+            <div>TIME TAKEN</div>
+            <div>EXPECTED TIME</div>
+            <div>EDIT</div>
+            <div>DELETE</div>
+            <div>RESUME TIMER</div>
+          </div>
+          <div class="display-container" id="display-container"></div>
+        </div>
+
+        <div class="display-profile" id="display-profile">
+          <div class="profile-heading">
+            <img
+              src="assets/profile.svg"
+              class="profile-img"
+              alt="no image"
+            />Profile
+          </div>
+          <div class="profile-username">
+            <div id="profile-username"></div>
+            <div id="profile-emailid"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-button">×</span>
+          <form style="text-align: center" class="task-form">
+            <h3>Task Details</h3>
+            <br />
+
+            <label>Task Name:</label><br /><br />
+            <div title="Enter the task name">
+              <input type="text" name="task-name" id="task-name" /><br /><br />
+            </div>
+            <label>Expected Time:</label><br /><br />
+            <div title="Enter the Expected time to complete task">
+              <input
+                type="text"
+                name="expected-time"
+                id="expected-time"
+              /><br /><br />
+            </div>
+          </form>
+          <button id="start-timer" class="start-timer-btn" name="startBtn">
+            Start Timer
+          </button>
+          <span id="timer" class="display-timer"> 00:00:00 </span>
+        </div>
+      </div>
+    </div>
+    <div class="edit-task" id="edit-task">
+      <div class="edit-close">
+        <button id="edit-close" class="edit-close">×</button>
+      </div>
+      <div class="edit-container">
+        <div style="font-weight: bold; font-size: 20px">Edit Task</div>
+        <div>Task name</div>
+        <input type="text" id="edit-task-name" class="edit-task-box" />
+        <div>Expected Time</div>
+        <input type="text" id="edit-expected-time" class="edit-task-box" />
+        <div>
+          <button id="edit-submit" class="edit-submit">submit</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
